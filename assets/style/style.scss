@@ -1,0 +1,178 @@
+@import url(_font.scss);
+@mixin text_style ($f-f, $f-s, $l-h, $f-w, $coloring) {
+    font-family: $f-f;
+    font-size: $f-s;
+    line-height: $l-h;
+    font-weight: $f-w;
+    color: $coloring;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    width: 100%;
+    background-image: url(/assets/img/5617847.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 300px;
+    padding-bottom: 200px;
+
+}
+.to-do {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.input_task {
+    width: 583px;
+    text-transform: capitalize;
+    background-color: rgb(245, 243, 240);
+    display: inline-block;
+    padding: 15px 0 15px 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(12, 12, 12);
+    @include text_style ('Montserrat', 18px, 22px, 700, #272121) ;
+    opacity: 0.8; 
+}
+
+.button_task {
+    @include text_style ('Montserrat', 18px, 22px, 700, #272121) ; 
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+    border: 3px solid rgb(12, 12, 12);
+    background-color: rgb(236, 229, 219);
+    cursor: pointer; }
+
+.list_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.list_wrapper li {
+    width: 650px;
+    display: inline-block;
+    border: 3px solid #272121;
+    padding: 15px 0 15px 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    @include text_style ('Montserrat', 18px, 22px, 700, #272121) ; 
+    background-color:rgb(245, 243, 240);
+}
+
+.checkbox_form {
+    display: inline-block;
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+}
+
+.label {
+    display: block;
+    @include text_style ('Montserrat', 18px, 22px, 700, #272121) ; 
+    margin-top: 5px;
+}
+
+.active {
+    text-decoration: line-through;
+}
+.list_item {
+    position: relative;
+    opacity: 0.8;
+}
+
+.icon_open {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-image: url(../img/3560696-200.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.delete_button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url(../img/av99d1cc0762c2ea29789.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    left: 660px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal_window {
+    width: 500px;
+    background-color:rgb(245, 243, 240);
+    position: absolute;
+    top:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid rgb(12, 12, 12);
+    opacity: 0.8;
+    display: none;
+ 
+}
+
+.title_modal {
+    @include text_style ('Montserrat', 18px, 22px, 700, #272121) ;
+    margin-bottom: 15px;
+}
+
+
+.text_modal {
+    @include text_style ('Montserrat', 14px, 18px, 400, #272121) ; 
+     padding-bottom: 20px;
+     border-bottom: 2px solid rgb(12, 12, 12);
+}
+
+.button_window {
+    @include text_style ('Montserrat', 18px, 22px, 700, #272121) ; 
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 4px 5px 4px;
+    border: 3px solid rgb(12, 12, 12);
+    background-color: rgb(236, 229, 219);
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.open_modal {
+    display: block;
+}
+
+.badge {
+    background-color: green;
+    border-radius: 5px;
+    padding: 4px 5px;
+    @include text_style ('Montserrat', 12px, 14px, 700, #272121) ; 
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.badge_todo {
+    background-color: red;
+}

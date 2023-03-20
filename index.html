@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.min.css">
+</head>
+<body>
+    <section class="section"> 
+        <div class="modal_window"> 
+            <h5 class="title_modal"> </h5>
+            <span class="badge"> </span>
+            <p class="text_modal"> Some text about task </p>
+            <button onclick="switchModal()" class="button_window" type="button"> Close </button>
+        </div>
+        <div class="to-do"> 
+            <form class="add_task"> 
+                <input class="input_task" id="inputval" value="">
+                <button onclick="addNewTodo()" type="button" class="button_task"> Add </button>
+                <label class="label" for="inputval"> Add new task... </label> 
+            </form>
+        </div>
+        <div class="list_wrapper"> 
+            <ul class="list"> 
+              
+            </ul>
+        </div>
+    </section>
+    <script src="assets/app.js"> </script>
+</body>
+</html>
